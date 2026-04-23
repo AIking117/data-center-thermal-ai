@@ -55,8 +55,10 @@ The system follows a modular pipeline:
 - Identifies abnormal conditions  
 - Produces:
   - Risk scores  
-  - Severity classification  
-  - Key contributing factors  
+  - Risk levels  
+  - Contributing factors  
+  - Primary risk drivers  
+  - Recommended operator actions  
 
 ### 4. Context Layer (RAG)
 - Stores domain knowledge:
@@ -126,14 +128,31 @@ This approach enables:
 ## Project Status
 
 ### Completed
-- Repository initialized  
-- Data generation module implemented (`src/data_generation.py`)  
-- System architecture defined  
+- Repository initialized
+- System architecture defined
+- Synthetic data generation module implemented (`src/data_generation.py`)
+- Feature engineering module implemented (`src/feature_engineering.py`)
+- Rule-based thermal risk assessment module implemented (`src/risk_assessment.py`)
+
+### Current Outputs
+The current pipeline produces:
+- Engineered thermal features
+- Risk scores
+- Risk levels
+- Contributing factors
+- Primary risk drivers
+- Recommended operator actions
 
 ### In Progress
-- Feature engineering  
-- Risk assessment logic  
-- LLM prompt design  
+- LLM prompt design
+- RAG context layer
+- Operator-facing explanation format
+
+### Next Steps
+- Add LLM explanation module
+- Add basic RAG knowledge documents
+- Add evaluation framework for explanation quality
+- Add simple UI for viewing rack risk explanations
 
 ---
 
