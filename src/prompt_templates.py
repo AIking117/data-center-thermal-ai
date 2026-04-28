@@ -88,7 +88,7 @@ if __name__ == "__main__":
         "risk_level": "Critical",
         "contributing_factors": [
             "Excessive temperature rise",
-            "Insufficient airflow per loadzzzz"
+            "Insufficient airflow per load"
         ],
         "primary_driver": "Insufficient airflow per load",
         "recommended_action": "Inspect fans, air pathways, and airflow management for this rack."
